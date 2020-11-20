@@ -1,0 +1,73 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 50%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(86, 165, 235, 0.25);
+    background-color: white;
+  }
+  body{
+    background-color: #898061 !important;
+}
+  
+  .choice-container{
+    cursor: pointer;
+   
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    background-color: #ffffc7 !important;
+  }
+  
+  .choice-prefix {
+    padding: 1rem 2rem;
+    background-color: #312b11;
+    color: white;
+  }
+  
+  .choice-text {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  .correct {
+    background-color: #28a745;
+  }
+  
+  .incorrect {
+    background-color: #dc3545;
+  }
+  
+  /* HUD */
+  
+  #hud {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+    
+  }
+  
+  .hud-main-text {
+    text-align: center;
+  }
+  
+  #progressBar {
+    width: 200px;
+    height: 20px;
+    border: 1px solid  #ffffc7;
+    margin-top: 1.5rem;
+    padding: 10px;
+    color: white;
+  }
+  
+  #progressBarFull {
+    height: 10px;
+    background-color:  #312b11;
+    width: 0%;
+  }
+  .loading{
+    display: none;
+  }

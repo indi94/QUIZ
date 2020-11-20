@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quick Quiz - Play</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <div id="game" class="justify-center flex-column">
+        <div id="hud">
+          <div id="hud-item">
+            <p id="progressText"
+             class="hud-prefix">
+              Question
+            </p>
+            <div id="difficulty">
+              <div id="difficulty"></div>
+            </div>
+          </div>
+          <div id="hud-item">
+            <p class="hud-prefix">
+              Score
+            </p>
+            <h1 class="hud-main-text" id="score">
+              0
+
+
+              
+            </h1>
+          </div>
+        </div>
+        <h2 id="question">What is the answer to this questions?</h2>
+        <div class="row">
+          <div class=" col-5 choice-container">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text"  in data-number="1">Choice 1</p>
+          </div>
+          <div class="col-1"></div>
+          <div class=" col-5 choice-container">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text"  data-number="2">Choice 2</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class=" col-5 choice-container"> 
+          <p class="choice-prefix">C</p>
+          <p class="choice-text"  data-number="3">Choice 3</p>
+        </div>
+        <div class="col-1"></div>
+        <div class=" col-5 choice-container">
+          <p class="choice-prefix">D</p>
+          <p class="choice-text"  data-number="4">Choice 4</p>
+        </div>
+      </div>
+      <div class="row pt-5 mt-5">
+        <div class="col-2">
+          <button type="button" class="btn btn-primary " id="CHECK">CHECK</button>
+          <button class="btn btn-primary telecharge  loading" id="loader" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="sr-only">Loading...</span>
+          </button>
+        </div>
+        <div class="col-8"></div>
+        <div class="col-2"><button type="button" class="btn btn-danger">clear results</button></div>
+      </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
